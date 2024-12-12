@@ -4,90 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IceCream</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <!-- HEADER -->
     <header class="header">
-        <nav class="navigation">
-            <a class="logo" href="./index.html"><img src="./img/logo.png" alt="site logo"></a>
-            <ul class="nav-list">
-                <li class="nav-list-item">
-                    <a class="nav-list-link" href="">Home</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-list-link" href="">About us</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-list-link" href="">How it's made</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-list-link" href="">Our products</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-list-link" href="">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <button class="modal-btn">Buy now ></button>
+        <div class="header-container container">
+            <!-- <a class="logo link" href="./index.html"><img src="./img/logo.png" alt="site logo" width="200" height="50"></a> -->
+            <nav class="navigation">
+                <a class="logo" href="./index.html"><img src="./img/logo.png" alt="site logo"></a>
+                <ul class="nav-list list">
+                    <li class="nav-list-item">
+                        <a class="nav-list-link link" href="">Home</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link link" href="">About us</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link link" href="">How it's made</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link link" href="">Our products</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-list-link link" href="">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        <button class="main-modal-btn buy-modal-btn">Buy now</button>
+        </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-top-container">
-            <div class="hero-title-container">
-                <h1 class="main-title">Ice cream made with passion</h1>
-            <ul class="hero-title-list">
-                <li class="hero-title-list-item">
-                    <button class="hero-title-list-btn">Products</button>
-                </li>
-                <li class="hero-title-list-item">
-                    <button class="hero-title-list-btn">How it's made?</button>
-                </li>
-            </ul>
+    <!-- HERO -->
+
+    <section class="hero-section">
+        <div class="hero-container container">
+            <div class="hero-top-container">
+                <div class="hero-title-container">
+                    <h1 class="main-title">Ice cream made with <span class="main-title main-title-span">passion</span></h1>
+                <ul class="hero-title-list list">
+                    <li class="hero-title-list-item">
+                        <a class="hero-title-list-btn">Products</a>
+                    </li>
+                    <li class="hero-title-list-item">
+                        <a class="hero-title-list-second-btn">How it's made?</a>
+                    </li>
+                </ul>
+                </div>
+                <ul class="stores-list list">
+                    <li class="stores-list-item">
+                        <p class="stores-list-num">16</p>
+                        <p class="stores-list-description">cafes</p>
+                    </li>
+                    <li class="stores-list-item">
+                        <p class="stores-list-num">23</p>
+                        <p class="stores-list-description">food trucks</p>
+                    </li>
+                </ul>
             </div>
-            <ul class="stores-list">
-                <li class="stores-list-item">
-                    <p class="stores-list-num">16</p>
-                    <p class="stores-list-dectription">cafes</p>
-                </li>
-                <li class="stores-list-item">
-                    <p class="stores-list-num">23</p>
-                    <p class="stores-list-dectription">food trucks</p>
-                </li>
-            </ul>
+            <div class="hero-bottom-container">
+                <ul class="entry-list list">
+                    <li class="entry-list-item">
+                        <img class="entry-list-img" src="./img/milkshake.png" alt="Milkshake">
+                    </li>
+                    <li class="entry-list-item">
+                        <p class="entry-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    </li>
+                </ul>
+            </div>
+            <img class="hero-icecream-img" src="./img/icecream.png" alt="Icecream">
+            <img class="hero-tasty-img" src="./img/tasty.png" alt="Icecream">
         </div>
-        <div class="hero-bottom-container">
-            <ul class="entry-list">
-                <li class="entry-list-item">
-                    <img class="entry-list-img" src="./img/milkshake.png" alt="Milkshake">
+        <!-- <img class="hero-bottom-img" src="./img/icecream.png" alt="Icecream"> -->
+    </section>
+
+    <!-- PRODUCTS -->
+
+    <section class="product-section section">
+        <div class="container">
+            <p class="overtitle">100% natural</p>
+            <h2 class="title">Products</h2>
+            <ul class="product-list list">
+                <li class="product-list-item first-item">
+                    <img class="product-list-img" src="./img/home-pic1.png" alt="Icecream">
+                    <h2 class="product-list-title">ice cream</h2>
+                    <img class="product-list-dots" src="./img/dots.svg" alt="">
+                    <p class="product-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    <button class="product-list-btn">></button>
                 </li>
-                <li class="entry-list-item">
-                    <p class="entry-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                <li class="product-list-item second-item">
+                    <img class="product-list-img" src="./img/home-pic2.png" alt="Ice coffee">
+                    <h2 class="product-list-title">ice coffee</h2>
+                    <img class="product-list-dots" src="./img/dots.svg" alt="">
+                    <p class="product-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    <button class="product-list-btn">></button>
+                </li>
+                <li class="product-list-item third-item">
+                    <img class="product-list-img" src="./img/home-pic3.png" alt="Milkshake">
+                    <h2 class="product-list-title">milkshakes</h2>
+                    <img class="product-list-dots" src="./img/dots.svg" alt="">
+                    <p class="product-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    <button class="product-list-btn">></button>
                 </li>
             </ul>
-            <img class="hero-bottom-img" src="./img/icecream.png" alt="Icecream">
         </div>
     </section>
 
-    <section class="product">
-        <p class="overtitle">100% natural</p>
-        <h2 class="title">Products</h2>
-        <ul class="product-list">
-            <li class="product-list-item">
-                <img class="product-list-img" src="./img/home-pic1.png" alt="Icecream">
-                <p class="product-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                <button class="product-list-btn">Arrow</button>
-            </li>
-            <li class="product-list-item">
-                <img class="product-list-img" src="./img/home-pic2.png" alt="Ice coffee">
-                <p class="product-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                <button class="product-list-btn">Arrow</button>
-            </li>
-            <li class="product-list-item">
-                <img class="product-list-img" src="./img/home-pic3.png" alt="Milkshake">
-                <p class="product-list-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                <button class="product-list-btn">Arrow</button>
-            </li>
-        </ul>
-
+    <section class="about-section section second-section-color">
+        <div class="container">
+        <p class="overtitle">tradition and love</p>
+        <h2 class="title second-section-title">how it’s made?</h2>
+        <div class="about-container">
+            <img class="about-container-img" src="./img/cows-milk.png" alt="cow and milk" width="516" height="516">
+            <div class="about-description">
+                <p class="about-description-text">
+                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
+                Maecenas eleifend erat at justo fringilla.
+                </p>
+                <ul class="about-list list">
+                    <li class="about-list-item">
+                        <p class="about-list-description">
+                            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
+                            Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+                        </p>
+                    </li>
+                    <li class="about-list-item">
+                        <p class="about-list-description">
+                            Aliquam erat volutpat. Aenean accumsan.
+                        </p>
+                    </li>
+                </ul>
+                <button class="main-modal-btn about-btn">Read more</button>
+            </div>
+        </div>
+        <div class="about-features">
+            
+        </div>
+        </div>
     </section>
     
     
